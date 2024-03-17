@@ -1,0 +1,30 @@
+server:
+  port:
+    8082
+
+spring:
+  application:
+    name: jpa-ex1
+  datasource:
+    url: jdbc:h2:C:/DEV/h2/bin/jpa.mv
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+
+jpa:
+  hibernate:
+    ddl-auto: create # entity ??? ??? ?? ??
+  properties:
+    hibernate:
+      format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type: trace
+
+localhost:8083/h2-console
+jdbc:h2:mem:7a8b90c6-46f3-4410-8d00-b9006290765f
